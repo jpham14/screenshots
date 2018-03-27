@@ -106,7 +106,9 @@ class Body extends React.Component {
     const hasNext = this.props.pageNumber < totalPages;
     const nextPageNumber = this.props.pageNumber - 0 + 1;
     const nextClasses = ["shots-page-nav"].concat(!hasNext && "disabled").join(" ");
-
+    if (totalPages === 1) {
+      return null;
+    }
     return (
       <div id="shot-index-page-navigation">
         <span className={prevClasses}>
@@ -164,7 +166,7 @@ class Body extends React.Component {
           <img src={ this.props.staticLink("/static/img/image-noshots_screenshots.svg") } alt="no Shots found" width="432" height="432"/>
         </Localized>
         <Localized id="shotIndexPageNoShotsMessage">
-          <p>No saved shots.</p>
+          <p>No saved shsdsdsds.</p>
         </Localized>
         <Localized id="shotIndexPageNoShotsInvitation">
           <p>Go on, create some.</p>
