@@ -166,7 +166,7 @@ class Body extends React.Component {
           <img src={ this.props.staticLink("/static/img/image-noshots_screenshots.svg") } alt="no Shots found" width="432" height="432"/>
         </Localized>
         <Localized id="shotIndexPageNoShotsMessage">
-          <p>No saved shsdsdsds.</p>
+          <p>No saved shots.</p>
         </Localized>
         <Localized id="shotIndexPageNoShotsInvitation">
           <p>Go on, create some.</p>
